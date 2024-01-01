@@ -3,9 +3,9 @@ import BlogPreviewCard from './components/BlogPreviewCard';
 
 function App() {
   return (
-    <>
+    <main role="main">
       <BlogPreviewCard />
-    </>
+    </main>
   );
 }
 
