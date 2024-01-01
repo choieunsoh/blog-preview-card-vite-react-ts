@@ -51,6 +51,10 @@ export default function BlogContent() {
           fontSize: '1.5rem',
           fontWeight: 800,
           lineHeight: '150%',
+          '&:hover, &:focus, &:active': {
+            cursor: 'pointer',
+            color: 'var(--Yellow, #F4D04E)',
+          },
         }}
       >
         HTML & CSS foundations
