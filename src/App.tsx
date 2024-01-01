@@ -1,9 +1,10 @@
 import './App.css';
+import BlogPreviewCard from './components/BlogPreviewCard';
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <BlogPreviewCard />
     </>
   );
 }
