@@ -1,4 +1,5 @@
 import { Box } from '@mui/joy';
+import BlogAuthor from './BlogAuthor';
 import BlogContent from './BlogIContent';
 import BlogImage from './BlogImage';
 
@@ -21,6 +22,7 @@ export default function BlogPreviewCard() {
     >
       <BlogImage />
       <BlogContent />
+      <BlogAuthor />
     </Box>
   );
 }
