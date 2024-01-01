@@ -1,9 +1,13 @@
 import { Box } from '@mui/joy';
+import { useMedia } from 'react-use';
 import BlogAuthor from './BlogAuthor';
 import BlogContent from './BlogIContent';
 import BlogImage from './BlogImage';
 
 export default function BlogPreviewCard() {
+  const isMobile = useMedia('(max-width: 375px)');
+  const width = isMobile ? '279px' : '21rem';
+
   return (
     <Box
       sx={{
@@ -12,7 +16,7 @@ export default function BlogPreviewCard() {
         alignItems: 'flex-start',
         gap: '1.5rem',
         flexShrink: 0,
-        width: '21rem',
+        width: width,
         padding: '1.5rem',
         borderRadius: '1.25rem',
         border: '1px solid var(--Black, #111)',
